@@ -1,0 +1,8 @@
+dataset: cifar10
+model: ddpm
+use_attack: True
+attack_type: pia
+use_defense: False
+total_steps: 40000
+batch_size: 32
+lr: 0.0001
