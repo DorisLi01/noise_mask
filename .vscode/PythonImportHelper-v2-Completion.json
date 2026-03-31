@@ -25,6 +25,23 @@
         "documentation": {}
     },
     {
+        "label": "torch.nn.functional",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
+        "label": "adaptive_avg_pool2d",
+        "importPath": "torch.nn.functional",
+        "description": "torch.nn.functional",
+        "isExtraImport": true,
+        "detail": "torch.nn.functional",
+        "documentation": {}
+    },
+    {
         "label": "torch.nn",
         "kind": 6,
         "isExtraImport": true,
@@ -98,23 +115,6 @@
         "documentation": {}
     },
     {
-        "label": "torch.nn.functional",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.nn.functional",
-        "description": "torch.nn.functional",
-        "detail": "torch.nn.functional",
-        "documentation": {}
-    },
-    {
-        "label": "adaptive_avg_pool2d",
-        "importPath": "torch.nn.functional",
-        "description": "torch.nn.functional",
-        "isExtraImport": true,
-        "detail": "torch.nn.functional",
-        "documentation": {}
-    },
-    {
         "label": "torch.utils.data",
         "kind": 6,
         "isExtraImport": true,
@@ -149,6 +149,14 @@
     },
     {
         "label": "Subset",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
+        "label": "DataLoader",
         "importPath": "torch.utils.data",
         "description": "torch.utils.data",
         "isExtraImport": true,
@@ -424,7 +432,31 @@
         "documentation": {}
     },
     {
+        "label": "transforms",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
         "label": "models",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "transforms",
+        "importPath": "torchvision",
+        "description": "torchvision",
+        "isExtraImport": true,
+        "detail": "torchvision",
+        "documentation": {}
+    },
+    {
+        "label": "datasets",
         "importPath": "torchvision",
         "description": "torchvision",
         "isExtraImport": true,
@@ -879,6 +911,14 @@
         "documentation": {}
     },
     {
+        "label": "UNet",
+        "importPath": "model",
+        "description": "model",
+        "isExtraImport": true,
+        "detail": "model",
+        "documentation": {}
+    },
+    {
         "label": "monotonic_align",
         "importPath": "model",
         "description": "model",
@@ -928,6 +968,22 @@
     },
     {
         "label": "load_member_data",
+        "importPath": "dataset_utils",
+        "description": "dataset_utils",
+        "isExtraImport": true,
+        "detail": "dataset_utils",
+        "documentation": {}
+    },
+    {
+        "label": "MIACIFAR10",
+        "importPath": "dataset_utils",
+        "description": "dataset_utils",
+        "isExtraImport": true,
+        "detail": "dataset_utils",
+        "documentation": {}
+    },
+    {
+        "label": "MIAImageFolder",
         "importPath": "dataset_utils",
         "description": "dataset_utils",
         "isExtraImport": true,
@@ -1057,6 +1113,38 @@
         "documentation": {}
     },
     {
+        "label": "CIFAR10",
+        "importPath": "torchvision.datasets",
+        "description": "torchvision.datasets",
+        "isExtraImport": true,
+        "detail": "torchvision.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "CIFAR100",
+        "importPath": "torchvision.datasets",
+        "description": "torchvision.datasets",
+        "isExtraImport": true,
+        "detail": "torchvision.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "CelebA",
+        "importPath": "torchvision.datasets",
+        "description": "torchvision.datasets",
+        "isExtraImport": true,
+        "detail": "torchvision.datasets",
+        "documentation": {}
+    },
+    {
+        "label": "SVHN",
+        "importPath": "torchvision.datasets",
+        "description": "torchvision.datasets",
+        "isExtraImport": true,
+        "detail": "torchvision.datasets",
+        "documentation": {}
+    },
+    {
         "label": "CocoDetection",
         "importPath": "torchvision.datasets",
         "description": "torchvision.datasets",
@@ -1105,6 +1193,24 @@
         "documentation": {}
     },
     {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
+        "label": "struct",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "struct",
+        "description": "struct",
+        "detail": "struct",
+        "documentation": {}
+    },
+    {
         "label": "copy",
         "kind": 6,
         "isExtraImport": true,
@@ -1148,6 +1254,38 @@
         "documentation": {}
     },
     {
+        "label": "app",
+        "importPath": "absl",
+        "description": "absl",
+        "isExtraImport": true,
+        "detail": "absl",
+        "documentation": {}
+    },
+    {
+        "label": "flags",
+        "importPath": "absl",
+        "description": "absl",
+        "isExtraImport": true,
+        "detail": "absl",
+        "documentation": {}
+    },
+    {
+        "label": "flags",
+        "importPath": "absl",
+        "description": "absl",
+        "isExtraImport": true,
+        "detail": "absl",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "importPath": "absl",
+        "description": "absl",
+        "isExtraImport": true,
+        "detail": "absl",
+        "documentation": {}
+    },
+    {
         "label": "flags",
         "importPath": "absl",
         "description": "absl",
@@ -1188,6 +1326,23 @@
         "documentation": {}
     },
     {
+        "label": "SummaryWriter",
+        "importPath": "tensorboardX",
+        "description": "tensorboardX",
+        "isExtraImport": true,
+        "detail": "tensorboardX",
+        "documentation": {}
+    },
+    {
+        "label": "torchvision.utils",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torchvision.utils",
+        "description": "torchvision.utils",
+        "detail": "torchvision.utils",
+        "documentation": {}
+    },
+    {
         "label": "make_grid",
         "importPath": "torchvision.utils",
         "description": "torchvision.utils",
@@ -1213,6 +1368,30 @@
     },
     {
         "label": "save_image",
+        "importPath": "torchvision.utils",
+        "description": "torchvision.utils",
+        "isExtraImport": true,
+        "detail": "torchvision.utils",
+        "documentation": {}
+    },
+    {
+        "label": "make_grid",
+        "importPath": "torchvision.utils",
+        "description": "torchvision.utils",
+        "isExtraImport": true,
+        "detail": "torchvision.utils",
+        "documentation": {}
+    },
+    {
+        "label": "save_image",
+        "importPath": "torchvision.utils",
+        "description": "torchvision.utils",
+        "isExtraImport": true,
+        "detail": "torchvision.utils",
+        "documentation": {}
+    },
+    {
+        "label": "make_grid",
         "importPath": "torchvision.utils",
         "description": "torchvision.utils",
         "isExtraImport": true,
@@ -1237,6 +1416,14 @@
         "documentation": {}
     },
     {
+        "label": "trange",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "tqdm",
         "importPath": "tqdm",
         "description": "tqdm",
@@ -1290,6 +1477,30 @@
         "description": "tqdm",
         "isExtraImport": true,
         "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianDiffusionTrainer",
+        "importPath": "diffusion",
+        "description": "diffusion",
+        "isExtraImport": true,
+        "detail": "diffusion",
+        "documentation": {}
+    },
+    {
+        "label": "GaussianDiffusionSampler",
+        "importPath": "diffusion",
+        "description": "diffusion",
+        "isExtraImport": true,
+        "detail": "diffusion",
         "documentation": {}
     },
     {
@@ -1331,6 +1542,31 @@
         "importPath": "math",
         "description": "math",
         "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1472,15 +1708,6 @@
         "importPath": "argparse",
         "description": "argparse",
         "detail": "argparse",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -1650,15 +1877,6 @@
         "description": "librosa.filters",
         "isExtraImport": true,
         "detail": "librosa.filters",
-        "documentation": {}
-    },
-    {
-        "label": "glob",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "glob",
-        "description": "glob",
-        "detail": "glob",
         "documentation": {}
     },
     {
@@ -2240,6 +2458,40 @@
         "description": "score.both",
         "isExtraImport": true,
         "detail": "score.both",
+        "documentation": {}
+    },
+    {
+        "label": "torch.optim",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "torch.optim",
+        "description": "torch.optim",
+        "detail": "torch.optim",
+        "documentation": {}
+    },
+    {
+        "label": "peak_signal_noise_ratio",
+        "importPath": "skimage.metrics",
+        "description": "skimage.metrics",
+        "isExtraImport": true,
+        "detail": "skimage.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "structural_similarity",
+        "importPath": "skimage.metrics",
+        "description": "skimage.metrics",
+        "isExtraImport": true,
+        "detail": "skimage.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "NoiseMaskDefender",
+        "kind": 6,
+        "importPath": "noisemask.defender",
+        "description": "noisemask.defender",
+        "peekOfCode": "class NoiseMaskDefender:\n    def __init__(self, noise_scale=0.1, mask_ratio=0.15):\n        self.noise_scale = noise_scale\n        self.mask_ratio = mask_ratio\n    def defend(self, feature):\n        # 噪声 + 掩码 + 平滑 = 同时防 PIA + SecMI\n        noise = torch.randn_like(feature) * self.noise_scale\n        B, C, H, W = feature.shape\n        mask = torch.rand((B, 1, H, W), device=feature.device) > self.mask_ratio\n        feature = feature * mask.float()",
+        "detail": "noisemask.defender",
         "documentation": {}
     },
     {
@@ -2837,6 +3089,24 @@
         "documentation": {}
     },
     {
+        "label": "read_loss_simple",
+        "kind": 2,
+        "importPath": "pia.DDPM.get_loss",
+        "description": "pia.DDPM.get_loss",
+        "peekOfCode": "def read_loss_simple(filepath):\n    steps = []\n    losses = []\n    with open(filepath, \"rb\") as f:\n        while True:\n            try:\n                header = f.read(8)\n                if len(header) < 8:\n                    break\n                data = f.read(struct.unpack(\"<Q\", header)[0])",
+        "detail": "pia.DDPM.get_loss",
+        "documentation": {}
+    },
+    {
+        "label": "log_file",
+        "kind": 5,
+        "importPath": "pia.DDPM.get_loss",
+        "description": "pia.DDPM.get_loss",
+        "peekOfCode": "log_file = glob.glob(\"./logs/events.out.tfevents*\")[0]\nsteps, losses = read_loss_simple(log_file)\n# ===================== 直接输出实验结果 =====================\nprint(\"=\"*50)\nprint(\"       DDPM 训练实验结果（纯文本版）\")\nprint(\"=\"*50)\nprint(f\"总训练步数 : {len(losses)}\")\nprint(f\"初始 Loss   : {losses[0]:.4f}\")\nprint(f\"最终 Loss   : {losses[-1]:.4f}\")\nprint(\"=\"*50)",
+        "detail": "pia.DDPM.get_loss",
+        "documentation": {}
+    },
+    {
         "label": "FLAGS",
         "kind": 2,
         "importPath": "pia.DDPM.main",
@@ -3143,6 +3413,312 @@
         "documentation": {}
     },
     {
+        "label": "FLAGS",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def FLAGS(x): return x\ndevice = torch.device('cuda:0')\nFLAGS.ch = 128\nFLAGS.ch_mult = [1, 2, 2, 2]\nFLAGS.attn = [1]\nFLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "ema",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(\n            target_dict[key].data * decay +\n            source_dict[key].data * (1 - decay))\ndef infiniteloop(dataloader):\n    while True:\n        for x, y in iter(dataloader):",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "infiniteloop",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def infiniteloop(dataloader):\n    while True:\n        for x, y in iter(dataloader):\n            yield x\ndef warmup_lr(step):\n    return min(step, FLAGS.warmup) / FLAGS.warmup\ndef cutout(mask_size, p, cutout_inside, mask_color=-1):\n    mask_size_half = mask_size // 2\n    offset = 1 if mask_size % 2 == 0 else 0\n    def _cutout(image):",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "warmup_lr",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def warmup_lr(step):\n    return min(step, FLAGS.warmup) / FLAGS.warmup\ndef cutout(mask_size, p, cutout_inside, mask_color=-1):\n    mask_size_half = mask_size // 2\n    offset = 1 if mask_size % 2 == 0 else 0\n    def _cutout(image):\n        image = image.clone()\n        if np.random.random() > p:\n            return image\n        h, w = image.shape[:2]",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "cutout",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def cutout(mask_size, p, cutout_inside, mask_color=-1):\n    mask_size_half = mask_size // 2\n    offset = 1 if mask_size % 2 == 0 else 0\n    def _cutout(image):\n        image = image.clone()\n        if np.random.random() > p:\n            return image\n        h, w = image.shape[:2]\n        if cutout_inside:\n            cxmin, cxmax = mask_size_half, w + offset - mask_size_half",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "get_dataset",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def get_dataset(FLAGS, only_member=False):\n    splits = np.load(f'./{FLAGS.dataset.upper()}_train_ratio0.5.npz')\n    member_idxs = splits['mia_train_idxs']\n    if FLAGS.dataset.upper() == 'CIFAR10':\n        transforms = torchvision.transforms.Compose([torchvision.transforms.RandomHorizontalFlip(),\n                                                     torchvision.transforms.ToTensor(),\n                                                     torchvision.transforms.Normalize((0.5, 0.5, 0.5),\n                                                                                      (0.5, 0.5, 0.5))])\n        dataset = MIACIFAR10(member_idxs, root='data/datasets/pytorch', train=True,\n                             transform=transforms, download=True)",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def train():\n    dataloader = get_dataset(FLAGS, only_member=True)\n    cutout_op = cutout(mask_size=4, p=0.1, cutout_inside=False)\n    # model setup\n    net_model = UNet(\n        T=FLAGS.T, ch=FLAGS.ch, ch_mult=FLAGS.ch_mult, attn=FLAGS.attn,\n        num_res_blocks=FLAGS.num_res_blocks, dropout=FLAGS.dropout)\n    optim = torch.optim.Adam(net_model.parameters(), lr=FLAGS.lr)\n    ema_model = copy.deepcopy(net_model)\n    sched = torch.optim.lr_scheduler.LambdaLR(optim, lr_lambda=warmup_lr)",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "def main(argv):\n    # suppress annoying inception_v3 initialization warning\n    warnings.simplefilter(action='ignore', category=FutureWarning)\n    train()\nif __name__ == '__main__':\n    app.run(main)",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "device = torch.device('cuda:0')\nFLAGS.ch = 128\nFLAGS.ch_mult = [1, 2, 2, 2]\nFLAGS.attn = [1]\nFLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.ch",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.ch = 128\nFLAGS.ch_mult = [1, 2, 2, 2]\nFLAGS.attn = [1]\nFLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.ch_mult",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.ch_mult = [1, 2, 2, 2]\nFLAGS.attn = [1]\nFLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.attn",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.attn = [1]\nFLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.num_res_blocks",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.num_res_blocks = 2\nFLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.dropout",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.dropout = 0.1\nFLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.beta_1",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.beta_1 = 1e-4\nFLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.beta_T",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.beta_T = 0.02\nFLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.T",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.T = 1000\nFLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.mean_type",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.mean_type = \"epsilon\"\nFLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.var_type",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.var_type = \"fixedlarge\"\nFLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.lr",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.lr = 2e-4\nFLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.grad_clip",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.grad_clip = 1.\nFLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.total_steps",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.total_steps = 800001\nFLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.img_size",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.img_size = 32\nFLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.warmup",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.warmup = 5000\nFLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.batch_size",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.batch_size = 128\nFLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.num_workers",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.num_workers = 4\nFLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.ema_decay",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.ema_decay = 0.9999\nFLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.parallel",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.parallel = False\nFLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.dataset",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.dataset = \"TINY-IN\"\nFLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.logdir",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.logdir = './logs/DDPM_CIFAR10_EPS'\nFLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.sample_size",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.sample_size = 64\nFLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(\n            target_dict[key].data * decay +",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.sample_step",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.sample_step = 1000\nFLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(\n            target_dict[key].data * decay +\n            source_dict[key].data * (1 - decay))",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.save_step",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.save_step = 30000\nFLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(\n            target_dict[key].data * decay +\n            source_dict[key].data * (1 - decay))\ndef infiniteloop(dataloader):",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS.num_images",
+        "kind": 5,
+        "importPath": "pia.DDPM.main_bakup",
+        "description": "pia.DDPM.main_bakup",
+        "peekOfCode": "FLAGS.num_images = 25000\ndef ema(source, target, decay):\n    source_dict = source.state_dict()\n    target_dict = target.state_dict()\n    for key in source_dict.keys():\n        target_dict[key].data.copy_(\n            target_dict[key].data * decay +\n            source_dict[key].data * (1 - decay))\ndef infiniteloop(dataloader):\n    while True:",
+        "detail": "pia.DDPM.main_bakup",
+        "documentation": {}
+    },
+    {
         "label": "Swish",
         "kind": 6,
         "importPath": "pia.DDPM.model",
@@ -3203,6 +3779,33 @@
         "description": "pia.DDPM.model",
         "peekOfCode": "class UNet(nn.Module):\n    def __init__(self, T, ch, ch_mult, attn, num_res_blocks, dropout):\n        super().__init__()\n        assert all([i < len(ch_mult) for i in attn]), 'attn index out of bound'\n        tdim = ch * 4\n        self.time_embedding = TimeEmbedding(T, ch, tdim)\n        self.head = nn.Conv2d(3, ch, kernel_size=3, stride=1, padding=1)\n        self.downblocks = nn.ModuleList()\n        chs = [ch]  # record output channel when dowmsample for upsample\n        now_ch = ch",
         "detail": "pia.DDPM.model",
+        "documentation": {}
+    },
+    {
+        "label": "PIADefense",
+        "kind": 6,
+        "importPath": "pia.DDPM.pia_defense",
+        "description": "pia.DDPM.pia_defense",
+        "peekOfCode": "class PIADefense:\n    def __init__(self, noise_scale=0.1, mask_ratio=0.15):\n        self.noise_scale = noise_scale\n        self.mask_ratio = mask_ratio\n    def apply(self, feat):\n        noise = torch.randn_like(feat) * self.noise_scale\n        B, C, H, W = feat.shape\n        mask = torch.rand((B, 1, H, W), device=feat.device) > self.mask_ratio\n        feat = feat * mask.float() + noise\n        return feat",
+        "detail": "pia.DDPM.pia_defense",
+        "documentation": {}
+    },
+    {
+        "label": "PIAAttack",
+        "kind": 6,
+        "importPath": "pia.DDPM.pia_defense",
+        "description": "pia.DDPM.pia_defense",
+        "peekOfCode": "class PIAAttack:\n    def __init__(self, attack_strength=0.12):\n        self.attack_strength = attack_strength\n    def apply(self, feat):\n        attack_noise = torch.randn_like(feat) * self.attack_strength\n        return feat + attack_noise\n# ====================== 实验结果自动保存 ======================\nclass ExpRecorder:\n    def __init__(self, use_defense, use_attack):\n        self.use_defense = use_defense",
+        "detail": "pia.DDPM.pia_defense",
+        "documentation": {}
+    },
+    {
+        "label": "ExpRecorder",
+        "kind": 6,
+        "importPath": "pia.DDPM.pia_defense",
+        "description": "pia.DDPM.pia_defense",
+        "peekOfCode": "class ExpRecorder:\n    def __init__(self, use_defense, use_attack):\n        self.use_defense = use_defense\n        self.use_attack = use_attack\n        self.loss_records = []\n        time_str = datetime.now().strftime(\"%m%d_%H%M\")\n        self.save_folder = f\"exp_def{use_defense}_atk{use_attack}_{time_str}\"\n        os.makedirs(self.save_folder, exist_ok=True)\n        os.makedirs(f\"{self.save_folder}/samples\", exist_ok=True)\n    def record_loss(self, loss):",
+        "detail": "pia.DDPM.pia_defense",
         "documentation": {}
     },
     {
@@ -8216,6 +8819,78 @@
         "description": "secmi.model",
         "peekOfCode": "class UNet(nn.Module):\n    def __init__(self, T, ch, ch_mult, attn, num_res_blocks, dropout):\n        super().__init__()\n        assert all([i < len(ch_mult) for i in attn]), 'attn index out of bound'\n        tdim = ch * 4\n        self.time_embedding = TimeEmbedding(T, ch, tdim)\n        self.head = nn.Conv2d(3, ch, kernel_size=3, stride=1, padding=1)\n        self.downblocks = nn.ModuleList()\n        chs = [ch]  # record output channel when dowmsample for upsample\n        now_ch = ch",
         "detail": "secmi.model",
+        "documentation": {}
+    },
+    {
+        "label": "AttackWrapper",
+        "kind": 6,
+        "importPath": "attack_wrapper",
+        "description": "attack_wrapper",
+        "peekOfCode": "class AttackWrapper:\n    def __init__(self, attack_type='pia', strength=0.1):\n        self.attack_type = attack_type\n        self.strength = strength\n    def attack(self, feat):\n        if self.attack_type == 'pia':\n            return feat + torch.randn_like(feat) * self.strength\n        elif self.attack_type == 'secmi':\n            return feat * (1 + 0.1 * torch.randn_like(feat))\n        elif self.attack_type == 'both':",
+        "detail": "attack_wrapper",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleUNet",
+        "kind": 6,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "class SimpleUNet(nn.Module):\n    def __init__(self, in_channels=3):\n        super().__init__()\n        self.act = nn.ReLU()\n        self.down1 = nn.Conv2d(in_channels, 64, 3, 1, 1)\n        self.down2 = nn.Conv2d(64, 128, 4, 2, 1)\n        self.down3 = nn.Conv2d(128, 256, 4, 2, 1)\n        self.up1 = nn.ConvTranspose2d(256, 128, 4, 2, 1)\n        self.up2 = nn.ConvTranspose2d(128, 64, 4, 2, 1)\n        self.up3 = nn.Conv2d(64, in_channels, 3, 1, 1)",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "make_exp_folder",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def make_exp_folder():\n    time_str = datetime.now().strftime(\"%m%d_%H%M%S\")\n    # 攻击信息\n    attack_info = \"no-attack\"\n    if FLAGS.use_attack:\n        attack_info = f\"attack-{FLAGS.attack_type}\"\n    # 防御信息\n    defense_info = f\"defense-{FLAGS.use_defense}\"\n    # 拼接超级清晰的文件夹名\n    exp_name = f\"exp_{time_str}_{FLAGS.dataset}_{FLAGS.diffusion_model}_{attack_info}_{defense_info}\"",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "load_diffusion_model",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def load_diffusion_model():\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    if FLAGS.dataset == \"fashionmnist\":\n        model = SimpleUNet(in_channels=1).to(device)\n    else:\n        model = SimpleUNet(in_channels=3).to(device)\n    return model\ndef get_dataset():\n    transform = transforms.Compose([\n        transforms.ToTensor(),",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "get_dataset",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def get_dataset():\n    transform = transforms.Compose([\n        transforms.ToTensor(),\n        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))\n    ])\n    if FLAGS.dataset == \"cifar10\":\n        return datasets.CIFAR10(root=\"./data\", train=True, download=False, transform=transform)\n    elif FLAGS.dataset == \"fashionmnist\":\n        return datasets.FashionMNIST(root=\"./data\", train=True, download=False, transform=transform)\n    elif FLAGS.dataset == \"fake\":",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "calculate_metrics",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def calculate_metrics(real, fake):\n    real = real.cpu().detach().numpy().transpose(0,2,3,1)\n    fake = fake.cpu().detach().numpy().transpose(0,2,3,1)\n    real = np.clip(real, 0, 1)\n    fake = np.clip(fake, 0, 1)\n    psnr_val = psnr(real, fake, data_range=1.0)\n    ssim_val = ssim(real, fake, channel_axis=-1, data_range=1.0)\n    mse_val = np.mean((real-fake)**2)\n    return {\"psnr\":psnr_val, \"ssim\":ssim_val, \"mse\":mse_val}\n# ====================== 主训练流程 ======================",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def main(argv):\n    exp_path = make_exp_folder()\n    loss_history = []\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    dataset = get_dataset()\n    dataloader = DataLoader(dataset, batch_size=FLAGS.batch_size, shuffle=True)\n    model = load_diffusion_model()\n    optimizer = optim.Adam(model.parameters(), lr=FLAGS.lr)\n    criterion = nn.MSELoss()\n    # 保存所有配置，方便写论文",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "FLAGS",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "FLAGS = flags.FLAGS\nflags.DEFINE_string('dataset', 'cifar10', 'cifar10 / fashionmnist / fake')\nflags.DEFINE_string('diffusion_model', 'ddpm', 'ddpm')\nflags.DEFINE_boolean('use_attack', False, '是否开启成员推理攻击')\nflags.DEFINE_string('attack_type', 'pia', 'pia / secmi / both')\nflags.DEFINE_boolean('use_defense', False, '是否开启NoiseMask防御')\nflags.DEFINE_integer('total_steps', 40000, '训练总步数')\nflags.DEFINE_integer('batch_size', 32, 'batch size')\nflags.DEFINE_float('lr', 1e-4, '学习率')\n# ====================== ^^^^^^^^^^^^^^^^^^^^^^^^^^ ======================",
+        "detail": "main_final",
         "documentation": {}
     }
 ]
