@@ -1,9 +1,0 @@
-dataset: cifar10
-diffusion_model: ddpm
-use_attack: True
-attack_type: pia
-use_defense: False
-total_steps: 80000
-batch_size: 128
-lr: 0.0002
-timesteps: 1000
