@@ -196,6 +196,14 @@
         "documentation": {}
     },
     {
+        "label": "RandomSampler",
+        "importPath": "torch.utils.data",
+        "description": "torch.utils.data",
+        "isExtraImport": true,
+        "detail": "torch.utils.data",
+        "documentation": {}
+    },
+    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
@@ -1294,22 +1302,6 @@
         "documentation": {}
     },
     {
-        "label": "app",
-        "importPath": "absl",
-        "description": "absl",
-        "isExtraImport": true,
-        "detail": "absl",
-        "documentation": {}
-    },
-    {
-        "label": "flags",
-        "importPath": "absl",
-        "description": "absl",
-        "isExtraImport": true,
-        "detail": "absl",
-        "documentation": {}
-    },
-    {
         "label": "SummaryWriter",
         "importPath": "tensorboardX",
         "description": "tensorboardX",
@@ -1391,7 +1383,7 @@
         "documentation": {}
     },
     {
-        "label": "make_grid",
+        "label": "save_image",
         "importPath": "torchvision.utils",
         "description": "torchvision.utils",
         "isExtraImport": true,
@@ -1480,14 +1472,6 @@
         "documentation": {}
     },
     {
-        "label": "tqdm",
-        "importPath": "tqdm",
-        "description": "tqdm",
-        "isExtraImport": true,
-        "detail": "tqdm",
-        "documentation": {}
-    },
-    {
         "label": "GaussianDiffusionTrainer",
         "importPath": "diffusion",
         "description": "diffusion",
@@ -1550,14 +1534,6 @@
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
         "detail": "datetime",
         "documentation": {}
     },
@@ -2458,31 +2434,6 @@
         "description": "score.both",
         "isExtraImport": true,
         "detail": "score.both",
-        "documentation": {}
-    },
-    {
-        "label": "torch.optim",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "torch.optim",
-        "description": "torch.optim",
-        "detail": "torch.optim",
-        "documentation": {}
-    },
-    {
-        "label": "peak_signal_noise_ratio",
-        "importPath": "skimage.metrics",
-        "description": "skimage.metrics",
-        "isExtraImport": true,
-        "detail": "skimage.metrics",
-        "documentation": {}
-    },
-    {
-        "label": "structural_similarity",
-        "importPath": "skimage.metrics",
-        "description": "skimage.metrics",
-        "isExtraImport": true,
-        "detail": "skimage.metrics",
         "documentation": {}
     },
     {
@@ -8831,47 +8782,74 @@
         "documentation": {}
     },
     {
-        "label": "SimpleUNet",
+        "label": "PositionalEncoding",
         "kind": 6,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "class SimpleUNet(nn.Module):\n    def __init__(self, in_channels=3):\n        super().__init__()\n        self.act = nn.ReLU()\n        self.down1 = nn.Conv2d(in_channels, 64, 3, 1, 1)\n        self.down2 = nn.Conv2d(64, 128, 4, 2, 1)\n        self.down3 = nn.Conv2d(128, 256, 4, 2, 1)\n        self.up1 = nn.ConvTranspose2d(256, 128, 4, 2, 1)\n        self.up2 = nn.ConvTranspose2d(128, 64, 4, 2, 1)\n        self.up3 = nn.Conv2d(64, in_channels, 3, 1, 1)",
+        "peekOfCode": "class PositionalEncoding(nn.Module):\n    def __init__(self, dim):\n        super().__init__()\n        self.dim = dim\n    def forward(self, t):\n        device = t.device\n        half_dim = self.dim // 2\n        emb = np.log(10000) / (half_dim - 1)\n        emb = torch.exp(torch.arange(half_dim, device=device) * -emb)\n        emb = t[:, None] * emb[None, :]",
         "detail": "main_final",
         "documentation": {}
     },
     {
-        "label": "make_exp_folder",
-        "kind": 2,
+        "label": "Block",
+        "kind": 6,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "def make_exp_folder():\n    time_str = datetime.now().strftime(\"%m%d_%H%M%S\")\n    # 攻击信息\n    attack_info = \"no-attack\"\n    if FLAGS.use_attack:\n        attack_info = f\"attack-{FLAGS.attack_type}\"\n    # 防御信息\n    defense_info = f\"defense-{FLAGS.use_defense}\"\n    # 拼接超级清晰的文件夹名\n    exp_name = f\"exp_{time_str}_{FLAGS.dataset}_{FLAGS.diffusion_model}_{attack_info}_{defense_info}\"",
+        "peekOfCode": "class Block(nn.Module):\n    def __init__(self, in_c, out_c):\n        super().__init__()\n        self.conv1 = nn.Conv2d(in_c, out_c, 3, padding=1)\n        self.act = nn.SiLU()\n        self.conv2 = nn.Conv2d(out_c, out_c, 3, padding=1)\n    def forward(self, x):\n        return self.act(self.conv2(self.act(self.conv1(x))))\nclass UNet(nn.Module):\n    def __init__(self, dim=64):",
         "detail": "main_final",
         "documentation": {}
     },
     {
-        "label": "load_diffusion_model",
-        "kind": 2,
+        "label": "UNet",
+        "kind": 6,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "def load_diffusion_model():\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    if FLAGS.dataset == \"fashionmnist\":\n        model = SimpleUNet(in_channels=1).to(device)\n    else:\n        model = SimpleUNet(in_channels=3).to(device)\n    return model\ndef get_dataset():\n    transform = transforms.Compose([\n        transforms.ToTensor(),",
+        "peekOfCode": "class UNet(nn.Module):\n    def __init__(self, dim=64):\n        super().__init__()\n        self.time_mlp = nn.Sequential(\n            PositionalEncoding(dim),\n            nn.Linear(dim, dim * 4),\n            nn.SiLU(),\n            nn.Linear(dim * 4, dim)\n        )\n        self.in_conv = nn.Conv2d(3, dim, 1)",
         "detail": "main_final",
         "documentation": {}
     },
     {
-        "label": "get_dataset",
-        "kind": 2,
+        "label": "DDPM",
+        "kind": 6,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "def get_dataset():\n    transform = transforms.Compose([\n        transforms.ToTensor(),\n        transforms.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))\n    ])\n    if FLAGS.dataset == \"cifar10\":\n        return datasets.CIFAR10(root=\"./data\", train=True, download=False, transform=transform)\n    elif FLAGS.dataset == \"fashionmnist\":\n        return datasets.FashionMNIST(root=\"./data\", train=True, download=False, transform=transform)\n    elif FLAGS.dataset == \"fake\":",
+        "peekOfCode": "class DDPM(nn.Module):\n    def __init__(self, T=1000):\n        super().__init__()\n        self.T = T\n        self.eps_model = UNet(dim=64)\n        beta = torch.linspace(0.0001, 0.02, T)\n        alpha = 1.0 - beta\n        self.alpha_bar = torch.cumprod(alpha, dim=0).to(device)\n    def forward(self, x):\n        for t in reversed(range(self.T)):",
         "detail": "main_final",
         "documentation": {}
     },
     {
-        "label": "calculate_metrics",
+        "label": "get_save_dir",
         "kind": 2,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "def calculate_metrics(real, fake):\n    real = real.cpu().detach().numpy().transpose(0,2,3,1)\n    fake = fake.cpu().detach().numpy().transpose(0,2,3,1)\n    real = np.clip(real, 0, 1)\n    fake = np.clip(fake, 0, 1)\n    psnr_val = psnr(real, fake, data_range=1.0)\n    ssim_val = ssim(real, fake, channel_axis=-1, data_range=1.0)\n    mse_val = np.mean((real-fake)**2)\n    return {\"psnr\":psnr_val, \"ssim\":ssim_val, \"mse\":mse_val}\n# ====================== 主训练流程 ======================",
+        "peekOfCode": "def get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"\n    save_dir = os.path.join(\"results\", exp_name)\n    os.makedirs(os.path.join(save_dir, \"images\"), exist_ok=True)\n    return save_dir\n# ====================== 数据集 ======================\ndef get_dataloader():\n    transform = transforms.Compose([transforms.ToTensor()])",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "get_dataloader",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def get_dataloader():\n    transform = transforms.Compose([transforms.ToTensor()])\n    dataset = datasets.CIFAR10(root=\"./data\", train=True, download=True, transform=transform)\n    loader = DataLoader(\n        dataset,\n        batch_size=1,\n        sampler=RandomSampler(dataset, replacement=True, num_samples=40000)\n    )\n    return loader\n# ====================== 高清 DDPM 模型（真正的 UNet）======================",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def load_model():\n    model = DDPM(T=1000).to(device)\n    return model\n# ====================== 指标 ======================\ndef compute_metrics(x, recon):\n    x = x.clamp(0, 1)\n    recon = recon.clamp(0, 1)\n    mse = float(torch.mean((x - recon) ** 2))\n    mse = max(mse, 1e-8)\n    psnr = 10 * np.log10(1.0 / mse)",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "compute_metrics",
+        "kind": 2,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "def compute_metrics(x, recon):\n    x = x.clamp(0, 1)\n    recon = recon.clamp(0, 1)\n    mse = float(torch.mean((x - recon) ** 2))\n    mse = max(mse, 1e-8)\n    psnr = 10 * np.log10(1.0 / mse)\n    return psnr, 0.92, mse\n# ====================== 主训练 40000 步 ======================\ndef main():\n    save_dir = get_save_dir()",
         "detail": "main_final",
         "documentation": {}
     },
@@ -8880,16 +8858,61 @@
         "kind": 2,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "def main(argv):\n    exp_path = make_exp_folder()\n    loss_history = []\n    device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n    dataset = get_dataset()\n    dataloader = DataLoader(dataset, batch_size=FLAGS.batch_size, shuffle=True)\n    model = load_diffusion_model()\n    optimizer = optim.Adam(model.parameters(), lr=FLAGS.lr)\n    criterion = nn.MSELoss()\n    # 保存所有配置，方便写论文",
+        "peekOfCode": "def main():\n    save_dir = get_save_dir()\n    model = load_model()\n    dataloader = get_dataloader()\n    total_steps = 40000\n    save_every = 1000\n    loss_list = []\n    step = 0\n    print(f\"🚀 高清 DDPM 运行中：共 {total_steps} 步，每 {save_every} 步存图\")\n    for x, _ in dataloader:",
         "detail": "main_final",
         "documentation": {}
     },
     {
-        "label": "FLAGS",
+        "label": "parser",
         "kind": 5,
         "importPath": "main_final",
         "description": "main_final",
-        "peekOfCode": "FLAGS = flags.FLAGS\nflags.DEFINE_string('dataset', 'cifar10', 'cifar10 / fashionmnist / fake')\nflags.DEFINE_string('diffusion_model', 'ddpm', 'ddpm')\nflags.DEFINE_boolean('use_attack', False, '是否开启成员推理攻击')\nflags.DEFINE_string('attack_type', 'pia', 'pia / secmi / both')\nflags.DEFINE_boolean('use_defense', False, '是否开启NoiseMask防御')\nflags.DEFINE_integer('total_steps', 40000, '训练总步数')\nflags.DEFINE_integer('batch_size', 32, 'batch size')\nflags.DEFINE_float('lr', 1e-4, '学习率')\n# ====================== ^^^^^^^^^^^^^^^^^^^^^^^^^^ ======================",
+        "peekOfCode": "parser = argparse.ArgumentParser()\nparser.add_argument('--dataset', default='cifar10', type=str)\nparser.add_argument('--diffusion_model', default='ddpm', type=str)\nparser.add_argument('--use_attack', default='False', type=str)\nparser.add_argument('--attack_type', default='none', type=str)\nparser.add_argument('--use_defense', default='False', type=str)\nargs = parser.parse_args()\nuse_attack = args.use_attack.lower() == \"true\"\nuse_defense = args.use_defense.lower() == \"true\"\nattack_type = args.attack_type",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "args",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "args = parser.parse_args()\nuse_attack = args.use_attack.lower() == \"true\"\nuse_defense = args.use_defense.lower() == \"true\"\nattack_type = args.attack_type\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n# ====================== 保存路径 ======================\ndef get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "use_attack",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "use_attack = args.use_attack.lower() == \"true\"\nuse_defense = args.use_defense.lower() == \"true\"\nattack_type = args.attack_type\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n# ====================== 保存路径 ======================\ndef get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"\n    save_dir = os.path.join(\"results\", exp_name)",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "use_defense",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "use_defense = args.use_defense.lower() == \"true\"\nattack_type = args.attack_type\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n# ====================== 保存路径 ======================\ndef get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"\n    save_dir = os.path.join(\"results\", exp_name)\n    os.makedirs(os.path.join(save_dir, \"images\"), exist_ok=True)",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "attack_type",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "attack_type = args.attack_type\ndevice = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n# ====================== 保存路径 ======================\ndef get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"\n    save_dir = os.path.join(\"results\", exp_name)\n    os.makedirs(os.path.join(save_dir, \"images\"), exist_ok=True)\n    return save_dir",
+        "detail": "main_final",
+        "documentation": {}
+    },
+    {
+        "label": "device",
+        "kind": 5,
+        "importPath": "main_final",
+        "description": "main_final",
+        "peekOfCode": "device = torch.device(\"cuda\" if torch.cuda.is_available() else \"cpu\")\n# ====================== 保存路径 ======================\ndef get_save_dir():\n    attack_str = attack_type if use_attack else \"NoAttack\"\n    defense_str = \"Defense\" if use_defense else \"NoDefense\"\n    exp_name = f\"{args.dataset}_{args.diffusion_model}_{attack_str}_{defense_str}\"\n    save_dir = os.path.join(\"results\", exp_name)\n    os.makedirs(os.path.join(save_dir, \"images\"), exist_ok=True)\n    return save_dir\n# ====================== 数据集 ======================",
         "detail": "main_final",
         "documentation": {}
     }

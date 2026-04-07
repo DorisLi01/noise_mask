@@ -1,0 +1,1 @@
+{'acc': np.float64(0.82), 'auc': np.float64(0.85), 'psnr': np.float64(-2.9921), 'ssim': 1.0, 'mse': 1.991623}
