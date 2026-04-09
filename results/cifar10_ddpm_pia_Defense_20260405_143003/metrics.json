@@ -1,9 +1,0 @@
-{
-    "total_steps": 40000,
-    "avg_loss": 0.000279,
-    "avg_acc": 0.92,
-    "avg_auc": 0.93,
-    "avg_psnr": 28.5,
-    "avg_ssim": 0.94,
-    "avg_mse": 0.000279
-}
